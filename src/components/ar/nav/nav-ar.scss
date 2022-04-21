@@ -1,0 +1,171 @@
+@import "../../../helpers_sass/variables";
+@import "../../../helpers_sass/RTL";
+.nav-ar {
+  height: 13vh;
+  background-color: $weightGrey;
+  overflow: visible;
+  @include prefixer(opacity, 0.4s height, webkit moz o ms);
+  opacity: 0.4s height;
+  &.stretching {
+    height: 41vh;
+  }
+  & > div {
+    @include prefixer(float, $float1, webkit moz o ms);
+    height: 100%;
+    background-color: whitesmoke;
+  }
+  .logo {
+    width: 300px;
+    @include prefixer(display, flex, webkit moz o ms);
+    display: flex;
+    @include prefixer(align-items, center, webkit moz o ms);
+    align-items: center;
+    h2 {
+      padding: 5px;
+      padding-bottom: 10px;
+      cursor: default;
+      margin-top: 12px;
+      #{$margin1}: 40px;
+      a {
+        font-size: ($normalSize + 10);
+        color: #000;
+        text-decoration: 0;
+      }
+      &:first-letter {
+        color: $orange;
+        font-size: 40px;
+        font-weight: bold;
+        @include prefixer(font-family, monospace, webkit moz o ms);
+        font-family: "Courier New", Courier, monospace;
+      }
+    }
+  }
+  .pages {
+    width: calc(100% - 300px);
+    @include prefixer(display, flex, webkit moz o ms);
+    display: flex;
+    @include prefixer(align-items, center, webkit moz o ms);
+    align-items: center;
+    @include prefixer(justify-content, flex-end, webkit moz o ms);
+    justify-content: flex-end;
+    .links {
+      height: 100%;
+      width: 800px;
+      @include prefixer(display, flex, webkit moz o ms);
+      display: flex;
+      @include prefixer(align-items, center, webkit moz o ms);
+      align-items: center;
+      @include prefixer(justify-content, flex-end, webkit moz o ms);
+      justify-content: flex-end;
+      #{$margin2}: 40px;
+      .outside-ul {
+        margin-top: 12.5px;
+        padding: 0;
+        a {
+          color: #000;
+          text-decoration: none;
+          font-size: ($normalSize - 1);
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 5px 10px;
+          font-size: 14px;
+          @include prefixer(
+            font-family,
+            (
+              -apple-system,
+              BlinkMacSystemFont,
+              "Segoe UI",
+              Roboto,
+              Oxygen,
+              Ubuntu,
+              Cantarell,
+              "Open Sans",
+              "Helvetica Neue",
+              sans-serif
+            ),
+            webkit moz o ms
+          );
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+          @include prefixer(transition, 0.5s, webkit moz o ms);
+          transition: 0.5s;
+          @include prefixer(background-color, transparent, webkit moz o ms);
+          background-color: transparent;
+          @include prefixer(border-radius, 15px 0 20px 0, webkit moz o ms);
+          border-radius: 0 20px 0 15px;
+          #{$margin2}: 5px;
+
+          &:hover,
+          &.active {
+            background-color: $orange;
+            color: #fff;
+          }
+        }
+        li {
+          overflow: hidden;
+          display: inline;
+          color: #000;
+          text-decoration: none;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 5px;
+          @include prefixer(transition, 0.5s, webkit moz o ms);
+          transition: 0.5s;
+          @include prefixer(background-color, transparent, webkit moz o ms);
+          background-color: transparent;
+          @include prefixer(border-radius, 15px 0 20px 0, webkit moz o ms);
+          border-radius: 15px 0 20px 0;
+          #{$margin2}: 10px;
+          cursor: pointer;
+          position: relative;
+          &:hover,
+          &.active {
+            background-color: $orange;
+            color: #fff;
+          }
+          i {
+            #{$margin2}: 4px;
+          }
+        }
+      }
+      .nav-btn {
+        height: 40px;
+        width: 40px;
+        line-height: 20px;
+        padding-bottom: 3px;
+        color: $orange;
+        @include prefixer(border, 2px solid transparent, webkit moz o ms);
+        border: 2px solid transparent;
+        @include prefixer(background-color, transparent, webkit moz o ms);
+        background-color: transparent;
+        font-size: ($normalSize + 10);
+        @include prefixer(border-radius, 3px, webkit moz o ms);
+        border-radius: 5px;
+        i {
+          font-weight: 500;
+          font-size: 23px;
+        }
+      }
+      .langs-selecter {
+        background-color: $orange;
+        color: #fff;
+        outline: 0;
+        #{$margin1}: 15px;
+        border: 2px solid $orange;
+        @include prefixer(transition, all 0.4s, webkit moz o ms);
+        transition: all 0.4s;
+        @include prefixer(border-radius, 15px 0 20px 0, webkit moz o ms);
+        border-radius: 15px 0 20px 0;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 6px 6px 6px;
+        text-decoration: none;
+        &:hover {
+          background-color: transparent;
+          color: $orange;
+        }
+      }
+    }
+  }
+}

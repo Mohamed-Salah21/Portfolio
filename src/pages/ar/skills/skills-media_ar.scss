@@ -1,0 +1,25 @@
+@import "../../../helpers_sass/variables";
+@media #{$maxLG} {
+  .tech-skills-page-ar .skills {
+    width: 974px !important ;
+  }
+}
+@media #{$maxMD} {
+  .tech-skills-page-ar .skills {
+    width: 760px !important ;
+  }
+}
+@media #{$maxSM} {
+  .tech-skills-page-ar {
+    height: auto;
+    padding: 7vh 0;
+    .skills {
+      display: block !important ;
+      & > div {
+        margin: 4vh auto 0;
+        height: 18vh;
+        width: 70%;
+      }
+    }
+  }
+}

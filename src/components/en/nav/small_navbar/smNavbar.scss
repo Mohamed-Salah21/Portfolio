@@ -1,0 +1,72 @@
+@import "../../../../helpers_sass/variables";
+@import "../../../../helpers_sass/LTR";
+.sm-navbar {
+  margin: 0;
+  padding: 0;
+  #{$padding2}: 12%;
+  transition: all 0.4s;
+  position: absolute;
+  top: 3vh;
+  #{$direction1}: 0;
+  z-index: 1;
+  width: 100%;
+  background: whitesmoke;
+  transform: translateY(17.5vh);
+  padding-bottom: 10px;
+  display: none;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.6s opacity;
+  &.viewing {
+    opacity: 1;
+    z-index: 0;
+  }
+  a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 0;
+    #{$padding1}: 30px;
+    font-weight: bold;
+    position: relative;
+    font-size: $smallSize;
+    text-transform: uppercase;
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      #{$direction1}: 0;
+      height: 2px;
+      width: 0;
+      background-color: $orange;
+      transition: all 0.4s;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+    &:hover,
+    &.active {
+      color: $orange;
+    }
+    &.active:after {
+      width: 100%;
+    }
+  }
+}
+
+@media #{$maxSM} {
+  .sm-navbar {
+    #{$padding2}: 90px !important ;
+    display: block;
+    a {
+      text-decoration: none;
+      display: block;
+    }
+  }
+}
+
+@media #{$maxXS} {
+  .sm-navbar {
+    width: 100% !important ;
+  }
+}

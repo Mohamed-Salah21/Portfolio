@@ -1,0 +1,49 @@
+@import "./helpers_sass/variables";
+@import "./helpers_sass/LTR";
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f2662c;
+  border-radius: 20px;
+}
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+.App {
+  direction: ltr;
+}
+.up-arrow {
+  position: fixed;
+  bottom: 12.5vh;
+  #{$direction1}: 1vw;
+  height: 5vh;
+  width: 5vh;
+  text-align: center;
+  background-color: $orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 1px #725656;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.6s;
+  &.active {
+    bottom: 10vh;
+    z-index: 1;
+    opacity: 1;
+  }
+  span {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 4px;
+  }
+}

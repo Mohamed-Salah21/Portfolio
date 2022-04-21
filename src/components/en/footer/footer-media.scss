@@ -1,0 +1,32 @@
+@import "../../../helpers_sass/variables";
+
+@media #{$maxLG} {
+  .footer-en .parent {
+    width: 900px;
+  }
+}
+
+@media #{$maxMD} {
+  .footer-en {
+    .parent {
+      width: 90%;
+      .columns-container {
+        & > div {
+          padding-left: 0 !important ;
+          height: auto !important;
+        }
+        & > div:last-of-type {
+          margin-top: 2vh;
+        }
+        & > div:nth-of-type(2) {
+          a:hover:after {
+            display: none;
+          }
+          a:hover {
+            color: $orange !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../../helpers_sass/variables";
+@import "../../../helpers_sass/RTL";
+@media #{$maxMD} {
+  .home-page-ar .container1 {
+    height: auto;
+    .article,
+    .background-wall {
+      @include prefixer(float, unset, webkit moz o ms);
+      float: unset;
+      height: 50%;
+      width: 100%;
+      #{$padding1}: 20px;
+    }
+    .article {
+      padding-top: 50px;
+    }
+    .background-wall {
+      margin-top: 20px;
+      .my_pic {
+        margin: 0;
+      }
+    }
+  }
+  .home-page-ar .container2 {
+    margin-top: 13vh;
+    #{$padding1}: 20px;
+    height: auto;
+    .section-question {
+      margin-top: 50px;
+      text-align: #{$direction1};
+    }
+    .section-container {
+      height: auto;
+      & > div {
+        @include prefixer(float, unset, webkit moz o ms);
+        float: unset;
+        width: 100% !important  ;
+      }
+      .texts {
+        padding: 0;
+        #{$padding1}: 0;
+        padding-bottom: 5vh;
+      }
+      .images {
+        @include prefixer(transform, translateX(-50%), webkit moz o ms);
+        transform: translateX(-50%);
+
+        div {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .home-page-ar .container3 {
+    margin-top: 10vh;
+    .the_parent {
+      #{$padding1}: 20px;
+      .question {
+        text-align: #{$direction1} !important ;
+        h2 {
+          font-size: 24px;
+          &:before {
+            width: 50%;
+            #{$direction1}: 0;
+          }
+          &:after {
+            width: 48%;
+            #{$direction2}: 2%;
+          }
+        }
+      }
+      .answers {
+        #{$margin1}: 0 !important;
+        & > div {
+          span {
+            font-size: 25px !important ;
+          }
+          p {
+            font-size: 18px !important ;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$maxSM} {
+  .home-page-ar .container1 .article div {
+    line-height: 1.4;
+    margin-top: 15px;
+    #{$padding2}: 10px;
+  }
+  .home-page-ar .container2 .texts p {
+    line-height: 1.4 !important ;
+    width: 95%;
+  }
+  .home-page-ar .container3 .answers {
+    span {
+      font-size: 28px !important ;
+    }
+    p {
+      font-size: 5px !important ;
+    }
+  }
+}

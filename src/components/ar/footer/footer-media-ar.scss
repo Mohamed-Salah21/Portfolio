@@ -1,0 +1,51 @@
+@import "../../../helpers_sass/variables";
+
+@media #{$maxLG} {
+  .footer-ar .parent {
+    width: 900px;
+  }
+}
+
+@media #{$maxMD} {
+  .footer-ar {
+    .parent {
+      width: 90%;
+      .columns-container {
+        & > div {
+          padding-left: 0 !important ;
+          height: auto !important;
+          h3:after { 
+            right : 0 !important;
+          }
+        }
+        & > div:first-of-type h3:after { 
+          right: 0 !important ;
+        }
+        & > div:last-of-type {
+          margin-top: 2vh;
+          padding: 0 !important;
+        }
+        & > div:nth-of-type(2) {
+          h3:after { 
+            right: 16% !important ; 
+          }
+          a:hover:after {
+            display: none;
+          }
+          a:hover {
+            color: $orange !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$maxSM} { 
+  .footer-ar  .parent  .columns-container > div:nth-of-type(2) { 
+    padding: 0 !important;
+    h3:after { 
+      right: 0 !important;
+    }
+  }
+}

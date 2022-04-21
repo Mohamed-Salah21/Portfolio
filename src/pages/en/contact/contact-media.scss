@@ -1,0 +1,46 @@
+@import "../../../helpers_sass/variables.scss";
+@media #{$maxLG} {
+  .contact-page-en .elements-container {
+    width: 758px !important ;
+  }
+}
+@media #{$maxMD} {
+  .contact-page-en .elements-container {
+    width: 90% !important ;
+    height: auto !important;
+  }
+  .elements-container > div:first-of-type,
+  .elements-container > div:last-of-type {
+    & > div {
+      .skill-icon {
+        font-size: 25px !important ;
+        padding: 12px 17px !important ;
+      }
+      & > div {
+        h4 {
+          font-size: 21px !important;
+        }
+        span {
+          font-size: 16px !important ;
+        }
+      }
+    }
+  }
+}
+@media #{$maxSM} {
+  .contact-page-en {
+    .elements-container > div:first-of-type,
+    .elements-container > div:last-of-type {
+      & > div {
+        height: 14vh !important  ;
+        margin-top: 2vh !important;
+        padding-bottom: 10px !important ;
+        .skill-icon {
+          font-size: 20px !important;
+          padding: 8px 12px !important ;
+          margin: 0 20px !important;
+        }
+      }
+    }
+  }
+}

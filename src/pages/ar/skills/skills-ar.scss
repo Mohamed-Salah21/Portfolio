@@ -1,0 +1,50 @@
+@import "../../../helpers_sass/variables";
+.tech-skills-page-ar {
+  height: 83.5vh;
+  @include prefixer(display, flex, webkit moz o ms);
+  display: flex;
+  @include prefixer(align-items, center, webkit moz o ms);
+  align-items: center;
+  @include prefixer(justify-content, center, webkit moz o ms);
+  justify-content: center;
+  .skills {
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    & > div {
+      margin-top: 20px;
+      width: 180px;
+      text-align: center;
+      padding: 20px 0;
+      transition: background-color 0.5s;
+      position: relative;
+      overflow: hidden;
+      @include prefixer(border-radius, 10px, webkit moz o ms);
+      border-radius: 10px;
+      @include prefixer(transition, box-shadow 0.5s, webkit moz o ms);
+      transition: box-shadow 0.5s !important  ;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+          rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,
+          rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      }
+      .img {
+        width: 72px;
+        height: 9vh;
+        margin: 0 auto;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      h5 {
+        margin: 0;
+        margin-top: 10px;
+        cursor: default;
+        font-size: $normalSize;
+      }
+    }
+  }
+}

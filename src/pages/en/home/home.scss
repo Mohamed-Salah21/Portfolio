@@ -1,0 +1,251 @@
+@import "../../../helpers_sass/variables";
+@import "../../../helpers_sass/LTR";
+.home-page-en {
+  .container1 {
+    height: 84vh;
+    height: 76vh;
+    & > div {
+      @include prefixer(float, $float1, webkit moz o ms);
+      float: $float1;
+      height: 100%;
+    }
+    .article {
+      width: 60%;
+      #{$padding1}: 50px;
+      padding-top: 120px;
+      header {
+        h3 {
+          margin: 0;
+          font-weight: bold;
+          font-family: $hFont;
+          font-size: $largeSize;
+          span {
+            color: $orange;
+          }
+          &:not(:first-of-type) {
+            margin-top: 5px;
+          }
+        }
+      }
+      div {
+        margin-top: 30px;
+        font-weight: 500;
+        line-height: 1.6;
+        font-size: $normalSize;
+      }
+      ul {
+        margin: 8vh 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        a {
+          color: #000;
+          text-decoration: none;
+          i {
+            font-size: 40px;
+          }
+          &:not(:first-of-type) {
+            #{$margin1}: 15px;
+          }
+          &:last-of-type {
+            font-size: 15px;
+            background-color: #000;
+            color: #fff;
+            height: 39px;
+            padding: 1px 10px;
+            line-height: 37px;
+            border-radius: 4px;
+            font-weight: bold;
+            @include prefixer(border-radius, 50%, webkit moz o ms);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .background-wall {
+      width: 40%;
+      .my_pic {
+        height: 300px;
+        width: 300px;
+        border: 6px solid $orange;
+        margin: auto;
+        margin-top: 100px;
+        background-image: url("../../../photos/home_page/moh.jpg");
+        background-size: cover;
+        background-position: center;
+        @include prefixer(
+          border-radius,
+          70% 34% 30% 66% / 65% 30% 70% 70%,
+          webkit moz o ms
+        );
+        border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+        @include prefixer(
+          animation,
+          (border-radius_animation 10s linear infinite),
+          webkit moz o ms
+        );
+        animation: border-radius_animation 8s linear infinite;
+      }
+    }
+  }
+  .container2 {
+    height: auto;
+    margin-top: 7vh;
+    .section-question {
+      text-align: center;
+
+      h2 {
+        font-family: $hFont;
+        text-transform: capitalize;
+        font-weight: bold;
+        position: relative;
+        display: inline;
+        font-size: $largeSize;
+        &:before {
+          position: absolute;
+          content: "";
+          bottom: -1.7vh;
+          #{$direction1}: 0;
+          background-color: $orange;
+          height: 7px;
+          width: 50%;
+          @include prefixer(border-radius, 5px, webkit moz o ms);
+          border-radius: 5px;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          bottom: -3vh;
+          #{$direction2}: 0;
+          background-color: #999999;
+          height: 7px;
+          width: 50%;
+          @include prefixer(border-radius, 5px, webkit moz o ms);
+          border-radius: 5px;
+        }
+      }
+    }
+    .section-container {
+      height: 60vh;
+      margin-top: 10vh;
+      & > div {
+        @include prefixer(float, $float1, webkit moz o ms);
+        float: $float1;
+        height: 100%;
+      }
+      .texts {
+        #{$padding1}: 50px;
+        width: 60%;
+        p {
+          font-weight: 500;
+          line-height: 1.6;
+          font-size: $normalSize;
+          margin-bottom: 0;
+        }
+        p a {
+          color: $orange;
+          text-decoration: none;
+          #{$margin1}: 5px;
+        }
+      }
+      .images {
+        width: 40%;
+        transition-delay: 0.2s;
+        div {
+          height: 300px;
+          width: 300px;
+          margin: 0 auto;
+          background-image: url("../../../photos/home_page/tes.gif");
+          background-size: cover;
+          background-position: center;
+          @include prefixer(
+            border-radius,
+            70% 34% 30% 66% / 65% 30% 70% 70%,
+            webkit moz o ms
+          );
+          border-radius: 70% 34% 30% 66% / 65% 30% 70% 70%;
+          @include prefixer(
+            animation,
+            (border-radius_animation 10s linear infinite 0.5s),
+            webkit moz o ms
+          );
+          animation: border-radius_animation 10s linear infinite 0.5s;
+        }
+      }
+    }
+  }
+  .container3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../photos/home_page/developer1.jpg");
+    background-attachment: fixed;
+    position: relative;
+    .the_parent {
+      position: absolute;
+      #{$direction1}: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(#fff, 0.7);
+      .question {
+        margin-top: 7vh;
+        text-align: center;
+        h2 {
+          text-transform: capitalize;
+          display: inline-block;
+          font-weight: bold;
+          font-family: $hFont;
+          position: relative;
+          font-size: $largeSize;
+          &:before {
+            position: absolute;
+            content: "";
+            bottom: -2.3vh;
+            #{$direction1}: 15%;
+            background-color: $orange;
+            height: 7px;
+            width: 35%;
+            @include prefixer(border-radius, 5px, webkit moz o ms);
+            border-radius: 5px;
+          }
+          &:after {
+            position: absolute;
+            content: "";
+            bottom: -3.5vh;
+            #{$direction2}: 15%;
+            background-color: #999999;
+            height: 7px;
+            width: 35%;
+            @include prefixer(border-radius, 5px, webkit moz o ms);
+            border-radius: 5px;
+          }
+        }
+      }
+      .answers {
+        margin-top: 20vh;
+        #{$margin1}: 20vw;
+
+        & > div {
+          margin-top: 1vh;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          span {
+            color: $orange;
+            font-size: 32px;
+            font-weight: bolder;
+            #{$margin2}: 10px;
+          }
+          p {
+            display: inline;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: $largeSize;
+          }
+        }
+      }
+    }
+  }
+}

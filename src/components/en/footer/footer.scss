@@ -1,0 +1,109 @@
+@import "../../../helpers_sass/variables.scss";
+@import "../../../helpers_sass/LTR.scss";
+.footer-en {
+  background-color: $weightGrey;
+  @include prefixer(display, flex, webkit moz o ms);
+  display: flex;
+  @include prefixer(align-items, flex-start, webkit moz o ms);
+  align-items: flex-start;
+  @include prefixer(justify-content, center, webkit moz o ms);
+  justify-content: center;
+  padding: 5vh 0;
+  .parent {
+    width: 1000px;
+    margin: 0 auto;
+    .columns-container {
+      margin: 0;
+      padding: 0;
+      & > div {
+        height: 35vh;
+        padding: 0;
+        h3 {
+          position: relative;
+          display: inline;
+          margin-bottom: 6vh;
+          color: $orange;
+          &:after {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 100%;
+            #{$direction1}: 0;
+            bottom: -1vh;
+            background-color: $orange;
+          }
+        }
+        & > div {
+          margin-top: 3vh;
+        }
+      }
+      & > div h3 {
+        @include prefixer(
+          font-family,
+          ("Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif),
+          webkit moz o ms
+        );
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      & > div:first-of-type {
+        #{$padding2}: 10px;
+        h3 {
+          color: #000;
+          @include prefixer(
+            font-family,
+            ("Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif),
+            webkit moz o ms
+          );
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+        }
+      }
+      & > div:nth-of-type(2) {
+        #{$padding1}: 15px;
+        @include prefixer(transition-delay, 0.2s, webkit moz o ms);
+        transition-delay: 0.2s;
+        span {
+          font-weight: bold;
+          color: $orange;
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+          @include prefixer(transition, color 0.2s, webkit moz o ms);
+          transition: color 0.2s;
+          position: relative;
+          transition : color 0.5s 0.2s ;
+          &:after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 0;
+            bottom: -2px;
+            #{$direction1}: 0;
+            @include prefixer(transition, all 0.4s, webkit moz o ms);
+            transition: all 0.4s;
+            background-color: $orange;
+          }
+          &:hover { 
+            color: $orange;
+          }
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+
+      & > div:last-of-type {
+        #{$padding1}: 15px;
+        @include prefixer(transition-delay, 0.2s, webkit moz o ms);
+        transition-delay: 0.2s;
+        span {
+          display: block;
+        }
+        i {
+          color: $orange;
+        }
+      }
+    }
+  }
+}

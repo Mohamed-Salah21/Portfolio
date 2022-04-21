@@ -1,0 +1,81 @@
+// colors
+$orange : #f2662c ;
+$weightOrange : #F58659 ;
+$weightGrey : #D0D6D9 ; 
+// Media Querry
+$maxLG : "(max-width: 1200px)";
+$minLG : "(min-width: 1200px)";
+$maxMD : "(max-width: 992px)";
+$minMD : "(min-width: 992px )";
+$maxSM : "(max-width: 768px)";
+$minSM : "(min-width: 768px )";
+$maxXS : "(max-width: 575px )";
+$minXS : "(min-width: 575px )";
+
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$hFont: 'Source Sans Pro', sans-serif ;
+$arabicFont : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+$smallSize : 14px ;
+$normalSize : 17px ;
+$largeSize : 23px ;
+$largerSize : 25px ;
+
+$fontweightNORMAL : 500 ;
+
+%unstyled-a { 
+    color: #000;
+    text-decoration: none;
+}
+%unstyled-row { 
+    padding: 0;
+    margin: 0;
+}
+%unstyled-p {
+    margin: 0;
+}
+// reveal-left
+
+@mixin unReveal-left  { 
+    transform : translateX(-100%) ;
+    transition: transform 1.5s , opacity 1.5s ;
+    opacity: 0  ;
+    z-index: -1 ;
+} 
+@mixin unReveal-right  { 
+    transform : translateX(100%) ;
+    transition: transform 1s  , opacity 2s  ;
+    opacity: 0  ;
+    z-index: -1 ;
+}
+@mixin unReveal-top  { 
+    transform : translateY(-100%) ;
+    transition: transform 1s , opacity 2s  ;
+    opacity: 0  ;
+    z-index: -1 ;
+}
+
+@mixin reveal {
+    transform : translateX(0);
+    opacity: 1 ; 
+    z-index: 0;
+} 
+@keyframes border-radius_animation { 
+    0% , 100% {
+        border-radius: 70% 34% 30% 66% / 65% 48% 52% 35%;
+    }
+    50% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    }
+}
+
+
+@mixin prefixer ( $property , $value , $prefixes ) { 
+    @each $prefix in $prefixes { 
+        #{ '-' + $prefix + '-' + $property } : $value
+    }
+    #{$property} : $value
+}
+
+
+
