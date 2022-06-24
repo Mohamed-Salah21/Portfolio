@@ -5,6 +5,7 @@ import registraion_img from "../../../photos/projects_background/registration.pn
 import devices_store_img from "../../../photos/projects_background/devices-store.png";
 import egy_store_img from "../../../photos/projects_background/egy-store.png";
 import english_quiz_img from "../../../photos/projects_background/quiz.png";
+import udacity_myReads_img from "../../../photos/projects_background/myReads.png";
 export const dataProjects = {
   projects: [
     {
@@ -17,13 +18,13 @@ export const dataProjects = {
       id: 2,
       name: "study",
       src : study_img , 
-      link: "https://studywebsite.netlify.app/",
+      link: "https://study-frontdevs.netlify.app/",
     },
     {
       id: 3,
       name: "netflix",
       src : netflix_img , 
-      link: "https://netflix-development.netlify.app/",
+      link: "https://netflix-frontdev.netlify.app/",
     },
     {
       id: 4,
@@ -48,6 +49,12 @@ export const dataProjects = {
       name: "english quiz",
       src : english_quiz_img, 
       link: "https://englishquiz22.netlify.app/",
+    },
+    {
+      id: 8,
+      name: "Udacity My Reads App",
+      src : udacity_myReads_img, 
+      link: "https://udacity-myreads-frontdev.netlify.app/",
     },
   ],
 };

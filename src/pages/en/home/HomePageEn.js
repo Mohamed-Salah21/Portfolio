@@ -29,9 +29,9 @@ var HomePageEn = () => {
               <p>
                 I work in front-end web development, and I have experience in
                 dealing with programming and modern web technologies, and I have
-                built a lot of projects that have increased my experience and
-                trained a lot, I am a fast learner and always love to develop
-                myself
+                built a lot of personal projects that have increased my
+                experience and trained a lot, I am a fast learner and always
+                love to develop myself
               </p>
             </div>
             <ul>
@@ -50,7 +50,7 @@ var HomePageEn = () => {
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://drive.google.com/file/d/1lBFKxXJtI_jK_ZpXPpqVoElo7fmDZOM_/view?usp=sharing"
+                href="https://drive.google.com/file/d/1jRlgsz9Q_93IwSQHWNTHHP2Fe4PRke-K/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -117,36 +117,32 @@ var HomePageEn = () => {
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p> Optmizing the user experience </p>
+                <p> Optmizing the user experiment</p>
               </div>
               <div>
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p> Developing and maintaining the user interface </p>
+                <p> Developing the user interface</p>
               </div>
               <div>
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p> Implementing design on mobile websites </p>
+                <p>Determining where to place anything into the website</p>
               </div>
-
               <div>
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p>
-                  Creating tools that improve site interaction regardless of the
-                  browser
-                </p>
+                <p>Trying to improve the websites regardless of the browser</p>
               </div>
 
               <div>
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p>Managing software workflow</p>
+                <p>Building the frontend portion of websites</p>
               </div>
             </div>
           </Fade>

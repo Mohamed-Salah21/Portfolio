@@ -11,7 +11,7 @@ var ContactPageEn = () => {
               <i class="fas fa-map-marker-alt skill-icon"></i>
               <div>
                 <h4>my address</h4>
-                <span>Cairo, Egypt</span>
+                <span>Ain Shams - Cairo - Egypt</span>
               </div>
             </div>
             <div>
@@ -29,29 +29,28 @@ var ContactPageEn = () => {
               <i class="fas fa-share-alt skill-icon"></i>
               <div>
                 <h4>social linkes</h4>
-                  <a
-                    href="https://www.linkedin.com/in/mohamed-salah-62861b203/"
-                    rel=" noreferrer"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
+                <a
+                  href="https://www.linkedin.com/in/mohamed-salah-62861b203/"
+                  rel=" noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
 
-                  <a
-                    href="https://github.com/Mohamed-Salah21"
-                    rel=" noreferrer"
-                    target="_blank"
-                  >
-                    <i class="fab fa-github-square"></i>
-                  </a>
-                  
+                <a
+                  href="https://github.com/Mohamed-Salah21"
+                  rel=" noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-github-square"></i>
+                </a>
               </div>
             </div>
             <div>
               <i class="fas fa-phone skill-icon"></i>
               <div>
                 <h4>call me</h4>
-                <span>01275681100</span>
+                <span>01149630650</span>
               </div>
             </div>
           </div>

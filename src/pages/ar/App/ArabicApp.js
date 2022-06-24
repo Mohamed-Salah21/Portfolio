@@ -7,6 +7,8 @@ import FunctionDuringRoutingAr from "../../../FunctionsDuringRoutingAr";
 import PhoneGmailAr from "../../../components/Participants/phone_gmail/PhoneGmail";
 import RoutesAr from "../../../components/ar/routes/Routes";
 import CopyRight from "../../../components/Participants/copy_right/CopyRight";
+import { createPortal } from "react-dom";
+
 function ArabicApp() {
   const [toggleAr, setToggleAr] = useState(false);
   const [scroll, setScroll] = useState(0);
@@ -22,25 +24,28 @@ function ArabicApp() {
         toggleAr && setToggleAr(false);
       })
   );
-  return (
-    <BrowserR>
-      <FunctionDuringRoutingAr setToggleAr={setToggleAr} />
-      <div class="arabic-app">
-        <PhoneGmailAr />
-        <NavAr toggleAr={toggleAr} setToggleAr={setToggleAr} />
-        <RoutesAr />
-        <FooterAr />
-        <CopyRight />
-        <div
-          className={`up-arrow-ar ${scroll && "active"} `}
-          onClick={() => window.scrollTo(0, 0)}
-        >
-          <span>
-            <i class="fas fa-angle-up"></i>
-          </span>
+  return createPortal(
+    <React.StrictMode>
+      <BrowserR>
+        <FunctionDuringRoutingAr setToggleAr={setToggleAr} />
+        <div class="arabic-app">
+          <PhoneGmailAr />
+          <NavAr toggleAr={toggleAr} setToggleAr={setToggleAr} />
+          <RoutesAr />
+          <FooterAr />
+          <CopyRight />
+          <div
+            className={`up-arrow-ar ${scroll && "active"} `}
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <span>
+              <i class="fas fa-angle-up"></i>
+            </span>
+          </div>
         </div>
-      </div>
-    </BrowserR>
+      </BrowserR>
+    </React.StrictMode>,
+    document.getElementById("arabic-app-root")
   );
 }
 export default ArabicApp;

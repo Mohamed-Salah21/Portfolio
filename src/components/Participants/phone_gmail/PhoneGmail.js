@@ -1,7 +1,7 @@
 import "./phone-gmail.scss";
 const PhoneGmailEn = () => {
   return (
-    <div className="phone-gmail-en">
+    <div className="phone-gmail" >
       <div className="container">
         <div className="row">
           <div className="phone col-md text-center text-md-left  ">
@@ -11,7 +11,7 @@ const PhoneGmailEn = () => {
             <span>
               <i className="fab fa-whatsapp"></i>
             </span>
-            : <span> 01275681100 </span>
+            : <span>01149630650</span>
           </div>
           <div className="gmail col-md text-center text-md-right ">
             <span>

@@ -40,18 +40,15 @@ var FooterAr = ({ scrolling }) => {
             <h3>جهات الاتصال</h3>
             <div>
               <span>
-                <i className="fas fa-mobile"></i> 01149630650
+                <i className="fab fa-whatsapp"></i> 01149630650 
               </span>
               <span>
-                <i className="fab fa-whatsapp"></i> 01275681100
+                <i className="fas fa-mobile"></i> 01275681100
               </span>
               <span>
                 <i className="fas fa-envelope"></i> moh.salah790@gmail.com
               </span>
-              <span>
-                <i className="fas fa-map-marker-alt"></i> عين شمس - القاهرة -
-                مصر
-              </span>
+              
             </div>
           </div>
         </div>

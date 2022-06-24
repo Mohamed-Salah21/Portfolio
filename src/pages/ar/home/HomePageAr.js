@@ -28,8 +28,8 @@ var HomePageAr = () => {
               <p>
                 أنا أعمل في تطوير الويب للواجهة الأمامية ، ولدي خبرة في التعامل
                 مع البرمجة وتقنيات الويب الحديثة ، وقد قمت ببناء الكثير من
-                المشاريع التي زادت من خبرتي وتدربت كثيرًا ، فأنا سريع التعلم
-                وأحب دائمًا التطوير نفسي
+                المشاريع الشخصية التي زادت من خبرتي وتدربت كثيرًا ، فأنا سريع
+                التعلم وأحب دائمًا تطوير نفسي
               </p>
             </div>
             <ul>
@@ -48,7 +48,7 @@ var HomePageAr = () => {
                 <i class="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://drive.google.com/file/d/1lBFKxXJtI_jK_ZpXPpqVoElo7fmDZOM_/view?usp=sharing"
+                href="https://drive.google.com/file/d/1jRlgsz9Q_93IwSQHWNTHHP2Fe4PRke-K/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -120,13 +120,13 @@ var HomePageAr = () => {
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p> تطوير واجهة المستخدم وصيانتها </p>
+                <p> تطوير واجهة المستخدم </p>
               </div>
               <div>
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p> تنفيذ التصميم على مواقع المحمول </p>
+                <p> تحديد مكان وضع أي شئ في الموقع  </p>
               </div>
 
               <div>
@@ -134,8 +134,7 @@ var HomePageAr = () => {
                   <i class="fas fa-check"></i>
                 </span>
                 <p>
-                  إنشاء أدوات تعمل على تحسين التفاعل مع الموقع بغض النظر عن
-                  المتصفح
+                  محاولة تحسين الموقع بغض النظر عن المتصفح
                 </p>
               </div>
 
@@ -143,7 +142,7 @@ var HomePageAr = () => {
                 <span>
                   <i class="fas fa-check"></i>
                 </span>
-                <p> ادارة سير عمل البرامج </p>
+                <p> بناء الجزء الأمامي من مواقع الويب </p>
               </div>
             </div>
           </Fade>

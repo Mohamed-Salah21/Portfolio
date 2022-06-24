@@ -1,7 +1,7 @@
 import "./skills.scss";
 import "./skills_media.scss";
 import Zoom from "react-reveal/Zoom";
-var TecknicalSkillsPageEn = () => {
+var TechSkillsPageEn = () => {
   return (
     <section className="tech-skills-page-en">
       <Zoom cascade>
@@ -9,7 +9,7 @@ var TecknicalSkillsPageEn = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/html5.png").default}
+                src={require("../../../photos/skills/HTML.png").default}
                 alt="html5"
               />
             </div>
@@ -18,7 +18,7 @@ var TecknicalSkillsPageEn = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/css3.png").default}
+                src={require("../../../photos/skills/CSS.png").default}
                 alt="css3"
               />
             </div>
@@ -27,7 +27,7 @@ var TecknicalSkillsPageEn = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/js.png").default}
+                src={require("../../../photos/skills/JavaScript.png").default}
                 alt="js"
               />
             </div>
@@ -36,16 +36,7 @@ var TecknicalSkillsPageEn = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/pugs.png").default}
-                alt="pugs"
-              />
-            </div>
-            <h5> Pugs </h5>
-          </div>
-          <div>
-            <div className="img">
-              <img
-                src={require("../../../photos/skills/sass.png").default}
+                src={require("../../../photos/skills/Sass.png").default}
                 alt="sass"
               />
             </div>
@@ -54,7 +45,7 @@ var TecknicalSkillsPageEn = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/bootstrap.png").default}
+                src={require("../../../photos/skills/Bootstrap.png").default}
                 alt="bootstrap"
               />
             </div>
@@ -63,16 +54,25 @@ var TecknicalSkillsPageEn = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/react.js.png").default}
-                alt="reactjs"
+                src={require("../../../photos/skills/Tailwind_CSS.png").default}
+                alt="bootstrap"
               />
             </div>
-            <h5>React Js</h5>
+            <h5>Tailwind CSS</h5>
           </div>
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/redux.png").default}
+                src={require("../../../photos/skills/React.png").default}
+                alt="reactjs"
+              />
+            </div>
+            <h5>React JS</h5>
+          </div>
+          <div>
+            <div className="img">
+              <img
+                src={require("../../../photos/skills/Redux.png").default}
                 alt="redux"
               />
             </div>
@@ -81,7 +81,16 @@ var TecknicalSkillsPageEn = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/github.png").default}
+                src={require("../../../photos/skills/Enzyme.png").default}
+                alt="redux"
+              />
+            </div>
+            <h5>Enzyme</h5>
+          </div>
+          <div>
+            <div className="img">
+              <img
+                src={require("../../../photos/skills/Github.png").default}
                 alt="github"
               />
             </div>
@@ -92,4 +101,4 @@ var TecknicalSkillsPageEn = () => {
     </section>
   );
 };
-export default TecknicalSkillsPageEn;
+export default TechSkillsPageEn;

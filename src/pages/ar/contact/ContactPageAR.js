@@ -11,7 +11,7 @@ var ContactPageAR = () => {
               <i class="fas fa-map-marker-alt skill-icon"></i>
               <div>
                 <h4>عنواني</h4>
-                <span>القاهرة, مصر</span>
+                <span>عين شمس - القاهرة - مصر</span>
               </div>
             </div>
             <div>
@@ -49,7 +49,7 @@ var ContactPageAR = () => {
               <i class="fas fa-phone skill-icon"></i>
               <div>
                 <h4>اتصل بي</h4>
-                <span>01275681100</span>
+                <span>01149630650</span>
               </div>
             </div>
           </div>
