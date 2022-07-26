@@ -8,7 +8,7 @@
   align-items: flex-start;
   @include prefixer(justify-content, center, webkit moz o ms);
   justify-content: center;
-  padding: 5vh 0;
+  padding: 8vh 0;
   .parent {
     width: 1000px;
     margin: 0 auto;
@@ -16,7 +16,6 @@
       margin: 0;
       padding: 0;
       & > div {
-        height: 35vh;
         padding: 0;
         h3 {
           position: relative;

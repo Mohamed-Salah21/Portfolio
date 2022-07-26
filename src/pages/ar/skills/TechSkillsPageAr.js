@@ -36,7 +36,7 @@ var TechSkillsPageAr = () => {
           <div>
             <div className="img">
               <img
-                src={require("../../../photos/skills/Sass.png").default}
+                src={require("../../../photos/skills/sass.png").default}
                 alt="sass"
               />
             </div>
@@ -77,6 +77,15 @@ var TechSkillsPageAr = () => {
               />
             </div>
             <h5>Redux</h5>
+          </div>
+          <div>
+            <div className="img">
+              <img
+                src={require("../../../photos/skills/GraphQL_Logo.svg.png").default}
+                alt="redux"
+              />
+            </div>
+            <h5>QraphQL</h5>
           </div>
           <div>
             <div className="img">

@@ -16,13 +16,13 @@ export const dataProjects = {
     },
     {
       id: 2,
-      name: "study",
+      name: "study clone",
       src : study_img , 
-      link: "https://study-frontdevs.netlify.app/",
+      link: "https://study-frontdev.netlify.app/",
     },
     {
       id: 3,
-      name: "netflix",
+      name: "netflix clone",
       src : netflix_img , 
       link: "https://netflix-frontdev.netlify.app/",
     },

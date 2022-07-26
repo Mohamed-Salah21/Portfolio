@@ -50,7 +50,7 @@ var HomePageEn = () => {
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://drive.google.com/file/d/1jRlgsz9Q_93IwSQHWNTHHP2Fe4PRke-K/view?usp=sharing"
+                href="https://drive.google.com/file/d/1lY_604jntizdX2qTtW8-xLa4lBZx5yBI/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
