@@ -24,7 +24,7 @@ export const dataProjects = {
       id: 3,
       name: "netflix clone",
       src : netflix_img , 
-      link: "https://netflix-frontdev.netlify.app/",
+      link: "https://myclone21.netlify.app/",
     },
     {
       id: 4,
